@@ -1,0 +1,23 @@
+body {
+    margin: 0;
+    text-align: center;
+}
+
+.restart {
+    display: none;
+}
+.alert {
+    background-color: red;
+}
+
+
+.main {
+    text-align: left;
+    width: 30%;
+    margin: auto;
+}
+
+div {
+    padding-top: 10px;
+    padding-bottom: 10px ;
+}
