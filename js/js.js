@@ -6,7 +6,7 @@ var round = 0
 var guesses = []
 
 function guess() {
-    if (round === 2) {
+    if (round === 10) {
         // 跳出按鈕重新開始 display: none => display: block 
         document.querySelector(".restart").style.display = 'block'
         return
