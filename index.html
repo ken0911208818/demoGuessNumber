@@ -13,11 +13,11 @@
         <div><span>We have selected a random number between 1 and 100. See if you can guess it in 10 turns or fewer. We'll tell you if your guess was too high or too low.</span></div>
         <div>
             <span>Enter a guess:</span>
-            <input type="number">
-            <button>submit guess</button>
+            <input type="number" name="number" id="number">
+            <button onclick="guess()">submit guess</button>
         </div>
 
-        <div><span>Previous guesses</span></div>
+        <div><span>Previous guesses  </span><span id="guesses"></span></div>
 
         <div class="alert"><span>Wong</span></div>
         <div>Last guess was too low!</div>

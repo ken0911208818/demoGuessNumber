@@ -1,5 +1,17 @@
 // 產生一個1到100間的隨機數字。
+var number = Math.floor(Math.random()*100)
+
 // 從一開始，紀錄玩家目前回合數。
+var round = 0
+var guesses = []
+function guess() {
+    // 獲取 input 內容
+    let guessNumber = document.getElementById("number").value
+    // 清空 input 內容
+    document.getElementById("number").value = ""
+    // 將陣列顯示在前端
+    document.getElementById("guesses").innerText += " " + guessNumber 
+}
 // 提供玩家猜數字的方向(太大還是太小)。
 // 當玩家送出第一個猜測後，將猜測記錄下來，讓玩家可以看到他們之前的猜測。
 // 接著檢查數字是否猜中。
